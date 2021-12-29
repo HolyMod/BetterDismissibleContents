@@ -1,0 +1,15 @@
+enum Sections {
+    GIFT_BUTTON,
+    GIF_BUTTON,
+    STICKER_BUTTON,
+    UPDATE_BUTTON,
+    HELP_BUTTON,
+    THREADS_BUTTON,
+    INBOX_BUTTON,
+    NOTIFICATIONS_BUTTON,
+    PINS_BUTTON,
+    CHANNEL_INFO_BUTTON,
+    SEARCH_BAR
+};
+
+export default Sections;
