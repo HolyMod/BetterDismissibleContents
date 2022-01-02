@@ -90,7 +90,7 @@ export default class DismissibleContents {
             ChannelStickerPickerButton,
             textAreaClasses
         ] = Webpack.bulk(
-            Webpack.Filters.byTypeString("SEASONALGIFTING_CHANNELBUTTON_POPUP"),
+            e => e?.type?.displayName === "ChannelPremiumGiftButton",
             e => e?.type?.render?.displayName === "ChannelGIFPickerButton",
             e => e?.type?.render?.displayName === "ChannelStickerPickerButton",
             ["textAreaHeight", "buttonContainer"]
